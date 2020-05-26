@@ -21,3 +21,12 @@
     border: #c4c4c4 1px solid;
   }
 }
+
+.dark-overly {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, 0.7);
+}
