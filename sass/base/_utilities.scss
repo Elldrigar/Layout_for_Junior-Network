@@ -3,4 +3,21 @@
   &-primary {
     @include set-background($primary-color);
   }
+  &-light {
+    @include set-background($light-color);
+    border: #c4c4c4 1px solid;
+  }
+  &-dark {
+    @include set-background($dark-color);
+  }
+  &-succes {
+    @include set-background($success-color);
+  }
+  &-danger {
+    @include set-background($danger-color);
+  }
+  &-white {
+    @include set-background(#ffffff);
+    border: #c4c4c4 1px solid;
+  }
 }
