@@ -10,3 +10,24 @@ $form-label-color: #3b3b3b;
 
 //SIZES
 $max-width: 1100px;
+
+//MARGINS AND PADDING
+$spaceamounts: (1,2,3,4,5);
+@each $space in $spaceamounts {
+  //ALL AROUND MARGIN
+  .margin-#{$space} {
+    margin: #{$space}rem;
+  }
+  //VERTICAL MARGIN
+  .margin-vertical-#{$space} {
+    margin: #{$space}rem 0;
+  }
+  //ALL AROUND PADDING
+  .padding-#{$space} {
+    padding: #{$space}rem;
+  }
+  //VERTICAL PADDING
+  .padding-vertical-#{$space} {
+    padding: #{$space}rem 0;
+  }
+}
