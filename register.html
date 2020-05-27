@@ -25,22 +25,26 @@
     <h1 class="large text-primary">Zapisz się</h1>
     <p class="lead"><i class="fas fa-user"></i> Utwórz Swoje konto</p>
     <form action="dashboard.html" class="form">
-        <div class="form-group">
-            <input type="text" placeholder="Imię" required>
+        <div class="form__group">
+            <input class="form__input" type="text" id="name" placeholder="Imię" required minlength="5">
+            <label class="form__label" for="name" >Imię min. 5 znaków</label>
         </div>
-        <div class="form-group">
-            <input type="email" placeholder="Adres e-mail">
-            <small class="form-text">Strona używa Gravatara do zdjęcia profilowego</small>
+        <div class="form__group">
+            <input class="form__input" type="email" id="email" placeholder="E-mail" required>
+            <label class="form__label" for="email" >E-mail. Strona używa Gravatara do zdjęcia profilowego</label>
         </div>
-        <div class="form-group">
-            <input type="password" placeholder="Hasło" minlength="8">
+        <div class="form__group">
+            <input class="form__input" type="password" placeholder="Hasło" id="password" minlength="8" required>
+            <label class="form__label" for="password" >Twoje unikatowe hasło min. 8 znaków</label>
         </div>
-        <div class="form-group">
-            <input type="password" placeholder="Potwierdź hasło" minlength="8">
+        <div class="form__group">
+            <input class="form__input" type="password" placeholder="Potwierdź hasło" id="confirmPassword" minlength="8" required>
+            <label class="form__label" for="confirmPassword" >Potwierdź swoje hasło</label>
         </div>
         <input type="submit" value="Register" class="btn btn-primary">
+        <p class="my-1">Masz juz konto? <a href="login.html"> Zaloguj się</a></p>
     </form>
-    <p class="my-1">Masz juz konto? <a href="login.html">Zaloguj się</a></p>
+
 </section>
 </body>
 </html>
