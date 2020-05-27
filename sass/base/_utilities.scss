@@ -39,3 +39,31 @@
   margin-top: 10rem;
   margin-bottom: 5rem ;
 }
+
+// ALERTS
+.alert {
+  padding: 1rem;
+  margin: 2rem;
+  opacity: 0.9;
+  background: $light-color;
+  color: #333;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 4px;
+  text-transform: uppercase;
+  box-shadow: $light-shadow;
+
+
+  &.alert-primary {
+    @include set-background($primary-color);
+  }
+  &.alert-dark {
+    @include set-background($dark-color);
+  }
+  &.alert-success {
+    @include set-background($success-color);
+  }
+  &.alert-danger {
+    @include set-background($danger-color);
+  }
+}
