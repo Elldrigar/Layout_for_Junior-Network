@@ -80,3 +80,33 @@
     border-bottom-left-radius: 20%;
   }
 }
+
+//LINE
+.line {
+  height: 1px;
+  background: #ccc;
+  margin: 3rem 0;
+}
+
+//BADGES
+.badge {
+  font-size: 1.5rem;
+  padding: .3rem;
+  text-align: center;
+  margin: .5rem;
+  background: $light-color;
+  color: #333333;
+
+  &.badge-primary {
+    @include set-background($primary-color)
+  }
+  &.badge-dark {
+    @include set-background($dark-color)
+  }
+  &.badge-success {
+    @include set-background($success-color)
+  }
+  &.badge-danger {
+    @include set-background($danger-color)
+  }
+}
