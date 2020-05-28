@@ -67,3 +67,10 @@
     @include set-background($danger-color);
   }
 }
+
+//ROUND IMAGES
+.round-img {
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  box-shadow: $light-shadow;
+}
