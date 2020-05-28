@@ -69,8 +69,14 @@
 }
 
 //ROUND IMAGES
-.round-img {
-  border-top-left-radius: 20%;
-  border-bottom-right-radius: 20%;
+.img {
   box-shadow: $light-shadow;
+  &--round-left-right {
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+  }
+  &--round-bottom {
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+  }
 }
