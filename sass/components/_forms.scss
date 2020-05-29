@@ -1,4 +1,9 @@
 .form {
+  &-text {
+    display: block;
+    margin-top: .8rem;
+    color: #888;
+  }
   &__input {
     border: 1px solid #000;
     display: block;
@@ -11,6 +16,30 @@
     border-radius: .5rem ;
     border-left: 2rem solid $primary-color;
     transition: all .4s;
+
+    &--noborder {
+      border: 1px solid #000;
+      display: block;
+      font-size: 2rem;
+      font-weight: 300;
+      width: 100%;
+      font-family: inherit;
+      color: inherit;
+      padding: 1.5rem 2rem;
+      border-radius: .5rem ;
+      transition: all .4s;
+
+      &:focus {
+        outline: none;
+        box-shadow: $light-shadow;
+        border: 1px solid $success-color;
+
+        &:invalid {
+          border: 1px solid $danger-color;
+        }
+      }
+    }
+
 
     &:focus {
       outline: none;
@@ -26,6 +55,17 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem);
+  }
+
+  &__input--noborder:placeholder-shown+&__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+  &__input--noborder:placeholder-shown+&__label--area {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6rem);
   }
 
   &__input::placeholder {
@@ -44,6 +84,21 @@
     padding-right: 0.5rem;
     transition: all .4s;
   }
+  &__label--area {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: $form-label-color;
+    margin-left: 4rem;
+    margin-top: .7rem;
+    transform: translateY(-10.3rem);
+    background-color: $background-color;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    transition: all .4s;
+  }
+}
+input[type='submit'] {
+  font:inherit;
 }
 
 .already-account {
