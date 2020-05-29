@@ -1,0 +1,31 @@
+.table {
+  width: 100%;
+  th,
+  td {
+    padding: 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    &:last-child:not(th) {
+      border-bottom: none;
+    }
+  }
+  th {
+    background: $light-color;
+    &:last-child {
+      border-bottom: none;
+      background-color: #ffffff;
+    }
+  }
+}
+.col1 {
+  width: 20%;
+}
+.col2 {
+  width: 30%;
+}
+.col3 {
+  width: 30%;
+}
+.col4 {
+  width: 20%;
+}
