@@ -23,47 +23,44 @@
     </ul>
 </nav>
 <section class="container">
-    <h1 class="large text-primary">Dodaj doświadczenia</h1>
+    <h1 class="large text-primary">Dodaj doświadczenie</h1>
     <p class="lead">
-        <i class="fas fa-code-branch"></i>
-        Dodaj dowolne stanowiska programistyczne, które posiadałeś w przeszłości
+        <i class="fas fa-laptop-code"></i>
+        Dodaj dowolne stanowisko programistyczne, które posiadałeś w przeszłości
     </p>
     <small class="">* wymagane</small>
     <form class="form">
-        <div class="form__group margin-vertical-1">
+        <div class="margin-vertical-1">
             <input class="form__input--noborder" type="text" placeholder="* Stanowisko" name="title" required>
-            <label class="form__label"><strong>Opis:</strong> Opisz się w kilku zdaniach</label>
+            <label class="form__label"><strong>Stanowisko:</strong> Na jakim stanowisku pracowałeś?</label>
         </div>
-        <div class="form__group ">
+        <div>
             <input class="form__input--noborder" type="text" placeholder="* Firma" name="company" required>
-            <label class="form__label"><strong>Opis:</strong> Opisz się w kilku zdaniach</label>
-        </div
+            <label class="form__label"><strong>Firma:</strong> Nazwa firmy</label>
         </div>
-        <div class="form__group margin-vertical-1">
+        <div class="margin-vertical-1">
             <input class="form__input--noborder" type="text" placeholder="Lokalizacja" name="location">
-            <label class="form__label"><strong>Opis:</strong> Opisz się w kilku zdaniach</label>
-        </div
+            <label class="form__label"><strong>Lokalizacja:</strong> Gdzie pracowałeś?</label>
         </div>
         <div class="form__date">
-             <div class="form__group form__date--2">
-                <h4>Od:</h4>
+             <div class="form__date--2">
+                <h4>Od dnia:</h4>
                 <input class="form__input--noborder " type="date" name="from">
              </div>
-             <div class="form__group form__date--2">
-                 <h4>Do:</h4>
+             <div class="form__date--2">
+                 <div class="form__date">
+                 <h4>Do dnia: </h4> <p> <input type="checkbox" name="current" value=""> Obecna praca</p>
+                 </div>
                  <input class="form__input--noborder" type="date" name="to">
              </div>
         </div>
-        <div class="form__group margin-vertical-1">
-            <p><input class="form margin-vertical-1" type="checkbox" name="current" value=""> Obecna praca</p>
-        </div>
-        <div class="form__group">
+        <div class="form__group margin-vertical-3">
           <textarea
-                  class="form__input--noborder margin-vertical-1"
+                  class="form__input--noborder"
                   name="description"
                   cols="30"
                   rows="5"
-                  placeholder="Opis"
+                  placeholder="Opisz krótko czym się zajmowałeś"
           ></textarea>
         </div>
         <input type="submit" value="Zatwierdź" class="btn btn-primary margin-vertical-1" />
