@@ -1,0 +1,26 @@
+.footer {
+
+  color: #ffffff;
+  &__box {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    bottom: 0;
+    right: 0;
+    background: $dark-color;
+    width: 19rem;
+    height: 3rem;
+    clip-path: polygon(33% 23%, 66% 5%, 100% 0, 100% 100%, 0 100%, 7% 72%, 17% 46%);
+    box-shadow: $light-shadow;
+  }
+  &__text {
+    margin-right: 2rem;
+    font-size: 1rem;
+    display: block;
+    color: #ffffff;
+  }
+}
+.fa-heart {
+  color: darkred;
+}
